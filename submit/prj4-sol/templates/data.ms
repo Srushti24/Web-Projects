@@ -1,0 +1,31 @@
+<data>
+             {{#output}}
+                 <tr>
+                         <td
+    		         class="tst-manufacturer">
+    		       {{{manufacturer}}}
+    		     </td>
+                         <td
+    		         class="tst-sensor-type-id">
+    		       {{{id}}}
+    		     </td>
+                         <td
+    		         class="tst-model-number">
+                 {{{modelNumber}}}
+    		       ab
+    		     </td>
+                         <td
+    		         class="tst-quantity">
+    		        {{{quantity}}}
+    		     </td>
+                         <td
+    		         class="numeric interval tst-limits-min">
+    		       {{{limits.min}}}
+    		     </td>
+                         <td
+    		         class="numeric interval tst-limits-max">
+    		       {{{limits.max}}}
+    		     </td>
+               </tr>
+               {{/output}}
+                 </data>
