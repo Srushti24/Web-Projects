@@ -51,10 +51,10 @@ SensorsWs.prototype.list = async function(type, q = {}) {
 
 SensorsWs.prototype.update = async function(type, obj) {
   try {
-    console.log("hit1");
+   // console.log("hit1");
     const url = URLS[type].call(null, this, obj);
-    console.log("url is");
-    console.log(url);
+   // console.log("url is");
+   // console.log(url);
     const response = await axios.post(url, obj);
     return response.data;
   }

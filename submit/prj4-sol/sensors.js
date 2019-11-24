@@ -228,6 +228,7 @@ function doSearchTypes(app) {
     
     const isSubmit = req.query.submit !== undefined;
     //let html;
+    var count=1;
     if(req.query.submit==undefined)
     { let initialOutput;
       if(req.query._index)
@@ -236,6 +237,7 @@ function doSearchTypes(app) {
         //console.log("v is");
         //console.log(v);
         const re={};
+        
         re["_index"]=v;
          initialOutput=await app.locals.model.list('sensor-types',re);
       }

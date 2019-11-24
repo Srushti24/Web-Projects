@@ -26,8 +26,8 @@ async function go(args) {
     const port = getPort(args[0]);
     const wsBaseUrl = args[1];
     const sensorsWs = new SensorsWs(wsBaseUrl);
-    console.log("sensorsWs is");
-    console.log(sensorsWs);
+    //console.log("sensorsWs is");
+    //console.log(sensorsWs);
     sensors(port, sensorsWs);
   }
   catch (err) {
